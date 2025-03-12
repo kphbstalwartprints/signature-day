@@ -8,10 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
-  downloadCatalogue(): void {
-    const link = document.createElement('a');
-    link.href = 'assets/2025Catalogue.pdf';  
-    link.download = 'Catalogue.pdf'; 
-    link.click(); 
-  }
+
 }
