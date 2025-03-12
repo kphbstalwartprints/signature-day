@@ -1,0 +1,27 @@
+<section style="background-color: #fff">
+    <div class="container py-5">
+      <h1 class="mb-5 text-center">What we do ?</h1>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4" *ngFor="let service of services">
+          <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+            <img [src]="service.imageSrc" class="catalogue-img" />
+            <a href="#!">
+              <div class="mask">
+                <div class="d-flex justify-content-start align-items-start">
+                  <h5>
+                    <span class="badge bg-light pt-2 ms-3 mt-3 text-dark">
+                      {{ service.badgeText }}
+                    </span>
+                  </h5>
+                </div>
+              </div>
+              <div class="hover-overlay">
+                <div class="mask" style="background-color: rgba(253, 253, 253, 0.15)"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

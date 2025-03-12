@@ -1,0 +1,23 @@
+.catalogue-img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    
+  }
+  
+  @media (max-width: 768px) {
+    .catalogue-img {
+      max-width: 100%; 
+    }
+  
+    .border {
+      width: 50%; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .border {
+      width: 80%; 
+    }
+  }
+  

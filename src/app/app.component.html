@@ -1,6 +1,17 @@
-<app-nav-bar></app-nav-bar>
-<router-outlet></router-outlet>
-<app-highlights></app-highlights>
-<app-our-clients></app-our-clients>
-<app-testimonals></app-testimonals>
-<app-footer></app-footer>
+<app-nav-bar></app-nav-bar> <!-- Navbar should always be visible -->
+
+<!-- Only show these components on the home page -->
+<div *ngIf="!(currentRoute === '/signatureday')">
+  <app-catalogue></app-catalogue>
+  <app-corporate-gifts></app-corporate-gifts>
+  <app-signature-day></app-signature-day>
+  <app-highlights></app-highlights>
+  <app-testimonals></app-testimonals>
+  <app-our-clients></app-our-clients>
+</div>
+
+<div *ngIf="(currentRoute === '/signatureday')">
+  <router-outlet></router-outlet> <!-- Routed Component (SignatureDay or Home) -->
+</div>
+
+<app-footer></app-footer> <!-- Footer should always be visible -->
