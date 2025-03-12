@@ -1,0 +1,32 @@
+<section style="background-color: #eee;">
+    <div class="text-center container py-5">
+      <h1 class="mt-4 mb-5 text-center">Our Mesmerizing Designs For Signature Day T-Shirts</h1>
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4" *ngFor="let design of designs">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+              data-mdb-ripple-color="light">
+              <img [src]="design.imgSrc" class="w-100" />
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h2 class="card-title mb-3">{{ design.title }}</h2>
+              </a>
+              <a href="" class="text-reset">
+                <p>Shapes will be adjusted accordingly to count.</p>
+              </a>
+              <h3 class="mb-3">{{ design.price }}</h3>
+              <!-- <button (click)="updateMessage(design.id)" class="btn btn-primary">Order this design</button> -->
+              <div class="contact-btn">
+                <a [href]="getWhatsAppLink(design.id)" 
+                   target="_blank" class="btn btn-success d-flex align-items-center">
+                    <i class="fab fa-whatsapp me-2"></i> Order Us on WhatsApp
+                </a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

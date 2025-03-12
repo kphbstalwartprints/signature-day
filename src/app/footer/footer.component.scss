@@ -1,0 +1,169 @@
+footer {
+    height: auto;
+    background-color: #000;
+    color: #d7d0d0;
+    font-size: 14px;
+    padding: 60px 40px 20px 40px;
+    margin: 0px auto;
+  }
+  
+  #main-logo img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: 75px;
+  }
+  
+  #stalwartcontent {
+    margin-top: 30px;
+  }
+  
+  #payments {
+    font-weight: 800;
+    font-family: inherit;
+  }
+  
+  #payments-info {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center; /* Ensures icons are aligned vertically */
+  }
+  
+  .social-media a {
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .contact-whatsapp {
+    display: inline-block;
+    text-align: center;
+    margin-left: 20px;
+    align-self: center; /* Ensures the WhatsApp button aligns correctly */
+  }
+  
+  .social-media i,
+  .contact-whatsapp i {
+    font-size: 24px; /* Adjust size for better alignment */
+  }
+  
+  .fa-facebook-f:hover {
+    color: rgb(119, 119, 255);
+  }
+  
+  .fa-twitter:hover {
+    color: rgb(0, 0, 168);
+  }
+  
+  .fa-google:hover {
+    color: rgba(255, 129, 11, 0.93);
+  }
+  
+  .fa-instagram:hover {
+    color: rgba(255, 14, 163, 0.782);
+  }
+  
+  .fa-linkedin:hover {
+    color: rgb(119, 253, 255);
+  }
+  
+  .fa-whatsapp:hover {
+    color: rgb(4, 125, 0);
+  }
+  
+  #products p:hover , #useful-links p:hover{
+    color: #97958f;
+  }
+  
+  #products  , #useful-links{
+    opacity: 70%;
+  }
+  
+  #location:hover {
+    color: #eac300;
+    text-decoration: none;
+  }
+  
+  #contacts {
+    margin-left: 0;
+  }
+  
+  #copyright {
+    margin-top: 40px;
+    font-family: inherit;
+    font-size: smaller;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    footer {
+      padding: 40px 20px 20px 20px;
+    }
+  
+    #products,
+    #useful-links,
+    #contacts {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .social-media {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    #main-logo img {
+      height: 60px;
+    }
+  
+    #payments-info {
+      width: 80%;
+      max-width: 100%;
+    }
+  
+    #stalwartcontent p {
+      font-size: 13px;
+      padding: 0 20px;
+    }
+  
+    #contacts {
+      margin-left: 0;
+      padding: 0 20px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .fab {
+      font-size: 24px;
+    }
+  
+    #payments-info {
+      width: 100%;
+    }
+  
+    #products h6,
+    #useful-links h6,
+    #contacts h6 {
+      font-size: 18px;
+    }
+  
+    #products,
+    #useful-links,
+    #contacts {
+      margin-bottom: 20px;
+    }
+  
+    footer {
+      padding: 20px;
+    }
+  
+    #payments {
+      font-size: 18px;
+    }
+  }
