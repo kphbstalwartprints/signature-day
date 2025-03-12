@@ -1,0 +1,27 @@
+<div class="testimonials-container">
+    <h1 class="mb-5 text-center">What our clients say</h1>
+    <div class="testimonials">
+      <div class="testimonial-card" *ngFor="let testimonial of testimonials">
+        <div class="client-header">
+          <img [src]="testimonial.photo" alt="client photo" class="client-photo" />
+          <div class="client-info">
+            <p class="client-name">{{ testimonial.name }}</p>
+            <p class="client-position">{{ testimonial.position }} at {{ testimonial.company }}</p>
+          </div>
+        </div>
+        
+        <p class="quote">"{{ testimonial.quote }}"</p>
+  
+        <!-- Stars Rating -->
+        <div class="stars">
+          <ng-container *ngFor="let star of [].constructor(testimonial.rating); let i = index">
+            <span class="star">&#9733;</span> <!-- Filled star -->
+          </ng-container>
+          <ng-container *ngFor="let star of [].constructor(5 - testimonial.rating); let i = index">
+            <span class="star empty">&#9733;</span> <!-- Empty star -->
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  
